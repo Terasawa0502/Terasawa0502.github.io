@@ -1,5 +1,5 @@
 /**
- * ページ内リンクのスクロールをなめらかにする
+ * ページ内リンクのスクロールをなめらかにするメソッド
  */
 window.addEventListener('DOMContentLoaded', function(e) {
   //querySelectorAllメソッドを使用してページ内のhref属性が#で始まるものを選択
@@ -30,6 +30,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
 
 /**
  * スクロール量に合わせてボタンの表示・非表示を切り替えるメソッド
+ * topボタンをクリックしたら画面上部に滑らかに移動するメソッド
  */
 window.addEventListener('scroll', () => {
   // 画面のスクロール量をpx（ピクセル）数で取得する
@@ -46,4 +47,12 @@ window.addEventListener('scroll', () => {
   else {
     topBtn.style.display = 'none';
   }
+
+  // topボタンをクリックしたらscrollTopFunctionが起動
+  topBtn.addEventListener("click", scrollTop);
+  // ページ上部へスムーズに移動
+  function scrollTop() {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+
 });
