@@ -4,6 +4,7 @@ const modal = document.querySelector('.js-modal'),
 image1 = document.getElementById('image1'), 
 image2 = document.getElementById('image2'),
 image3 = document.getElementById('image3'),
+appImg = this.document.getElementById('application-img'),
 environment = this.document.getElementById('environment'),
 summary = this.document.getElementById('summary'),
 background = this.document.getElementById('background'),
@@ -19,7 +20,8 @@ image3.addEventListener('click', modalOpen3);
 //「開くボタン」をクリックしてモーダルを開く
 function modalOpen1() {
   modal.classList.add('is-active');
-  environment.textContent = 'Java/Intelli J IDEA'
+  appImg.innerHTML = '<img src="img/console1.png" alt="テキスト">';
+  environment.textContent = 'Java/Intelli J IDEA';
   summary.textContent = '';
   background.textContent = '';
   github.textContent = 'https://github.com/Terasawa0502/BlackJack';
@@ -29,7 +31,7 @@ function modalOpen1() {
 
 function modalOpen2() {
   modal.classList.add('is-active');
-  environment.textContent = 'Java/Android Studio'
+  environment.textContent = 'Java/Android Studio';
   summary.textContent = '';
   background.textContent = '';
   github.textContent = 'https://github.com/Terasawa0502/andoroid_todolist_app';
