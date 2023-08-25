@@ -5,12 +5,9 @@ window.addEventListener('DOMContentLoaded', function(e) {
   //querySelectorAllメソッドを使用してページ内のhref属性が#で始まるものを選択
   const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
   for (let i = 0; i < smoothScrollTrigger.length; i++) {
-    console.log("1");
     smoothScrollTrigger[i].addEventListener('click', (e) => {
-      console.log("2");
         // 3. ターゲットの位置を取得
         e.preventDefault();
-        console.log("3");
         let href = smoothScrollTrigger[i].getAttribute('href'); // 各a要素のリンク先を取得
         let targetElement = document.getElementById(href.replace('#', '')); // リンク先の要素（コンテンツ）を取得
         
