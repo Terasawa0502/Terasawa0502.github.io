@@ -4,8 +4,8 @@ const modal = document.querySelector('.js-modal'),
 image1 = document.getElementById('image1'), 
 image2 = document.getElementById('image2'),
 image3 = document.getElementById('image3'),
-slider = this.document.getElementById('slider'),
-slide = this.document.querySelectorAll('slide'),
+sliders = this.document.querySelectorAll('slider'),
+slide = this.document.querySelectorAll('.slide'),
 contents = this.document.querySelectorAll('.slide-content'),
 environment = this.document.getElementById('environment'),
 summary = this.document.getElementById('summary'),
@@ -34,8 +34,6 @@ function modalOpen1() {
       contents[i].innerHTML = consoleImg[i];
     }
   }
-
-  // content.innerHTML = '<img src="img/console1.png" alt="テキスト">';
   environment.textContent = 'Java/Intelli J IDEA';
   summary.textContent = '';
   background.textContent = '';
