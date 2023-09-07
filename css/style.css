@@ -139,36 +139,6 @@ li {
   border-radius: 4px 0 0 4px;
 }
 
-.prev-001:hover,
-.next-001:hover {
-  background-color: rgba(107, 182, 255, 0.8);
-}
-
-
-.dots {
-  height: 15px;
-  padding: 0;
-  position: absolute;
-  bottom: 22px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 10px 4px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-
-.dot:hover {
-  background-color: rgba(107, 182, 255, 0.8);
-}
-
 /* モーダルを閉じるボタンの指定 */
 .modal-close{
   position: absolute;

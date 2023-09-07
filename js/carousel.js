@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function(e) {
 
+  // 要素を取得
   const sliders = this.document.querySelectorAll('.slider')
 
   sliders.forEach((slider, cont_slider) => {
@@ -14,22 +15,6 @@ window.addEventListener('DOMContentLoaded', function(e) {
     next.classList.add("next-001");
     next.innerHTML = "&#10095;";
     slider.append(next);
-
-    let dots = document.createElement("div");
-    dots.classList.add("dots");
-    slider.append(dots);
-
-    slides.forEach((slide, cont_slide) => {
-      let dot = document.createElement("span");
-      dot.classList.add("dot");
-      dots.append(dot);
-      dot.addEventListener("click", (e) => {
-        slideIndex = cont_slide + 1;
-        slides.forEach((slide, cont_slide) => {
-          slide.style = "left: -" + (slideIndex - 1) * 100 + "%;";
-        });
-      });
-    });
 
     next.addEventListener("click", (e) => {
       slideIndex == slides.length ? (slideIndex = 1) : slideIndex++;
