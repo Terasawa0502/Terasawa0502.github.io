@@ -20,6 +20,11 @@ var consoleImg = ['<img src="img/console1.png" alt="テキスト">',
                   '<img src="img/console2.png" alt="テキスト">',
                   '<img src="img/console3.png" alt="テキスト">'];
 
+// Todoアプリ写真の配列
+var todoAppImg = ['<img src="img/todoapp1.png" alt="テキスト">',
+                  '<img src="img/todoapp2.png" alt="テキスト">',
+                  '<img src="img/todoapp3.png" alt="テキスト">'];                  
+
 image1.addEventListener('click', modalOpen1);
 image2.addEventListener('click', modalOpen2);
 image3.addEventListener('click', modalOpen3);
@@ -45,6 +50,13 @@ function modalOpen1() {
 
 function modalOpen2() {
   modal.classList.add('is-active');
+
+// slide-contentを順に取得して写真を挿入していく  
+  for (let i in contents) {
+    if (contents.hasOwnProperty(i)) {
+      contents[i].innerHTML = todoAppImg[i];
+    }
+  }
   environment.textContent = 'Java/Android Studio';
   summary.textContent = 'Android上で動作するTodoを管理するアプリを作成しました';
   background.textContent = '資格などの勉強をする際に使用するTodoアプリを自分用に作成してみたかったからです';
