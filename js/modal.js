@@ -34,28 +34,28 @@ function modalOpen1() {
       contents[i].innerHTML = consoleImg[i];
     }
   }
-  environment.textContent = 'Java/Intelli J IDEA';
-  summary.textContent = '';
-  background.textContent = '';
+  environment.textContent = 'Java/IntelliJ IDEA';
+  summary.textContent = 'コンソール上でコンピュータ相手と遊べるBlackJackゲームができます';
+  background.textContent = 'トランプを使ったアプリを作成してみたかったからです';
   // ToDo: 後でリンクにする
   github.textContent = 'https://github.com/Terasawa0502/BlackJack'; 
-  point.textContent = '';
-  assignment.textContent = '';
+  point.textContent = 'トランプをランダムで表示させる仕組みを実現させるのが大変でした';
+  assignment.textContent = '連続してゲームをプレイすることや複数人でのプレイを実現させてみたいです';
 }
 
 function modalOpen2() {
   modal.classList.add('is-active');
   environment.textContent = 'Java/Android Studio';
-  summary.textContent = '';
-  background.textContent = '';
+  summary.textContent = 'Android上で動作するTodoを管理するアプリを作成しました';
+  background.textContent = '資格などの勉強をする際に使用するTodoアプリを自分用に作成してみたかったからです';
   github.textContent = 'https://github.com/Terasawa0502/andoroid_todolist_app';
-  point.textContent = '';
-  assignment.textContent = '';
+  point.textContent = 'データベースと連動した処理を実装するのが大変でした';
+  assignment.textContent = 'カレンダー機能と連携させてリマインダーのような機能を実装してみたいです';
 }
 
 function modalOpen3() {
   modal.classList.add('is-active');
-  environment.textContent = ''
+  environment.textContent = '';
   summary.textContent = '';
   background.textContent = '';
   github.textContent = '';
