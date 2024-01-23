@@ -23,7 +23,12 @@ var consoleImg = ['<img src="img/console1.png" alt="テキスト">',
 // Todoアプリ写真の配列
 var todoAppImg = ['<img src="img/todoapp1.png" alt="テキスト">',
                   '<img src="img/todoapp2.png" alt="テキスト">',
-                  '<img src="img/todoapp3.png" alt="テキスト">'];                  
+                  '<img src="img/todoapp3.png" alt="テキスト">'];
+
+// Todoアプリ写真の配列
+var noAppImg = ['<img src="img/noimage1.png" alt="テキスト">',
+                  '<img src="img/noimage1.png" alt="テキスト">',
+                  '<img src="img/noimage1.png" alt="テキスト">'];                  
 
 image1.addEventListener('click', modalOpen1);
 image2.addEventListener('click', modalOpen2);
@@ -67,6 +72,13 @@ function modalOpen2() {
 
 function modalOpen3() {
   modal.classList.add('is-active');
+
+// slide-contentを順に取得して写真を挿入していく
+for (let i in contents) {
+  if (contents.hasOwnProperty(i)) {
+    contents[i].innerHTML = noAppImg[i];
+  }
+}  
   environment.textContent = '';
   summary.textContent = '';
   background.textContent = '';
