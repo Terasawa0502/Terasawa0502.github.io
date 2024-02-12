@@ -44,6 +44,11 @@ li {
   margin: 10px 0;
 }
 
+.sub-content {
+  display: flex;
+  justify-content: space-around;
+}
+
 .section-item-img {
   border-radius: 6px;
 }
