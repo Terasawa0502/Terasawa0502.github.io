@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>MyProfile</title>
+    <meta name="description" content="テキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/carousel.js"></script>
+    <!-- 自動西暦表示用関数 -->
+    <script type="text/javascript">
+      function ShowNowYear() {
+        var now = new Date();
+        var year = now.getFullYear();
+        document.write(year);
+      } 
+    </script>
+  </head>
+
+  <body>
+    <header id="header" class="wrapper">
+      <h1 class="site-title"><a href="index.html">
+        <img src="img/logo.svg" alt="Profile">
+      </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <img src="img/mainvisual.jpg" alt="メインビジュアル">
+      </div>
+      <section id="about" class="wrapper">
+      </section>
+      <section id="works" class="wrapper">
+      </section>
+    </main>
+    <!-- TOPに戻るボタン -->
+    <a href="#" id="page-top">TOP</a>
+    <!-- 自動西暦表示 -->
+    <footer id="footer">
+      <p>&copy; 
+        <script type="text/javascript">
+          ShowNowYear();
+        </script> 
+          Profile</p>
+    </footer>
+  </body>
+</html>
