@@ -10,6 +10,14 @@
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/carousel.js"></script>
+    <!-- 自動西暦表示用関数 -->
+    <script type="text/javascript">
+      function ShowNowYear() {
+        var now = new Date();
+        var year = now.getFullYear();
+        document.write(year);
+      } 
+    </script>
   </head>
 
   <body>
@@ -34,20 +42,8 @@
       <section id="about" class="wrapper">
         <h2 class="section-title">About</h2>
         <div class="content">
-          <!-- <img src="img/slot.png" alt="アイコン"> -->
-          <!-- <div class="subvisual"> -->
-            <!-- <img src="img/subvisual.jpg" alt="サブビジュアル"> -->
-          <!-- </div> -->
           <div class="text">
             <h3 class="content-name">T.N</h3>
-            <!-- <h4 class="content-subtitle">概要</h4>
-            <p>1996年5月2日生まれで、27歳。</p>
-            <p>愛知県出身で大学入学のタイミングで上京。現在は神奈川県川崎市に在住。</p>
-            <p>大学生時代は、アルバイトで塾講師をしながら、国家資格「診療放射線技師」を取得。</p>
-            <p>大学卒業後は病院で8か月勤務。</p>
-            <p>勤務するなかで機器のメンテナンスや営業するエンジニアの方と接する機会が多くあり、</p>
-            <p>放射線機器を良くすることで、患者さんはもちろん機器を扱う技術者側にも恩恵を与えることができる</p>
-            <p>エンジニアという職業を目の当たりにし、転職を決意しました。</p> -->
             <h4 class="content-subtitle">経歴</h4>
             <div class="sub-content">
               <div class="content-period">
@@ -163,8 +159,13 @@
     </main>
     <!-- TOPに戻るボタン -->
     <a href="#" id="page-top">TOP</a>
+    <!-- 自動西暦表示 -->
     <footer id="footer">
-      <p>&copy; 2024 Profile</p>
+      <p>&copy; 
+        <script type="text/javascript">
+          ShowNowYear();
+        </script> 
+          Profile</p>
     </footer>
   </body>
 </html>
