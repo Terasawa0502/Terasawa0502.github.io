@@ -51,7 +51,7 @@ li {
 
 .sub-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .section-item-img {
