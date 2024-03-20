@@ -309,4 +309,11 @@ li {
   margin-bottom: 30px;
 }
 
+#page-top {    
+  bottom: 19px;
+  right: 10px;
+  padding: 14px 12px;
+  font-size: 10px;
+}
+
 }
