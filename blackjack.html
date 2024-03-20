@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>MyProfile</title>
+    <meta name="description" content="テキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/blackjack.css">
+    <script src="js/scroll.js"></script>
+    <script src="js/carousel.js"></script>
+    <!-- 自動西暦表示用関数 -->
+    <script type="text/javascript">
+      function ShowNowYear() {
+        var now = new Date();
+        var year = now.getFullYear();
+        document.write(year);
+      } 
+    </script>
+  </head>
+
+  <body>
+    <!-- Todo リンクの変更 -->
+    <!-- ヘッダー リンク -->
+    <header id="header" class="wrapper">
+      <h1 class="site-title"><a href="index.html">
+        <img src="img/logo.svg" alt="Profile">
+      </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Todo 画面の差し替え -->
+      <!-- Todo カルーセルスライダー導入 -->
+      <!-- メイン アプリ画像 -->
+      <div id="mainvisual">
+        <h2 class="app-title"> ブラックジャックアプリ </h2>
+        <img src="img/mainvisual.jpg" alt="メインビジュアル">
+      </div>
+      <!-- アプリ概要説明 -->
+      <section id="description" class="wrapper">
+        <div class="content">
+            <h3>【開発言語/開発環境】</h3>
+            <p>Java/IntelliJ IDEA</p>
+            <h3>【概要】</h3>
+            <p>トランプゲームのブラックジャックを遊ぶことができるアプリです。</p>
+            <p>コンソール上で数字や文字を入力することで手軽にコンピュータ相手にゲームができます。</p>
+            <h3>【制作した背景】</h3>
+            <p>JavaSilverの資格取得後に、簡単でもいいからアプトプットの一環として</p>
+            <p>0から作ってみたいと考えたためです。</p>
+            <h3>【GitHub URL】</h3>
+            <a href="https://github.com/Terasawa0502/BlackJack">ソースコードの確認はこちら</a>
+            <h3>【制作してみての感想】</h3>
+            <p>本アプリ作成の準備段階として、Javaの資格勉強などで準備を進めていたものの、</p>
+            <p>わからないことがたくさんありました。</p>
+            <p>その度に参考書やインタネットで調べて、コードを修正して、再びエラーが出るの繰り返しでした。</p>
+            <p>ですが、度重なる試行錯誤の中で「わからないときの調べ方」についてとても勉強になりました。</p>
+            <p>Javaに限らず、適切なキーワードでの検索する力は、今後の制作でも大いに役立つと思います。</p>
+            <p>まだまだ実装したい機能や課題点なども多数ありますが、今後の課題にしていきます。</p>
+        </div>
+      </section>
+    </main>
+    <!-- TOPに戻るボタン -->
+    <a href="#" id="page-top">TOP</a>
+
+    <!-- Todo 前の作品と後の作品と戻るボタン -->
+    <!-- フッター 自動西暦表示 -->
+    <footer id="footer">
+      <p>&copy; 
+        <script type="text/javascript">
+          ShowNowYear();
+        </script> 
+          Profile</p>
+    </footer>
+  </body>
+</html>
