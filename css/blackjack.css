@@ -120,19 +120,33 @@ li {
   margin: 10px 0px;
 }
 
-#works ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-#works li {
-  width: 32%;
-}
-
 #footer {
   font-size: 0.5rem;
   padding: 10px 0;
   text-align: center;
+}
+
+/* 前のページに戻るボタン */
+
+#container {
+  padding: 16px;
+}
+
+#back-btn {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+	color: #e9e9e9;
+	transition: 0.5s;
+}
+
+#back-btn:hover {
+  color: black;
 }
 
 /* TOPに戻るボタン */
@@ -191,6 +205,12 @@ li {
 #works li {
   width: 100%;
   margin-bottom: 30px;
+}
+
+#back-btn {
+  width: 60px;
+  padding: 0.5rem 2rem;
+  font-size: 10px;
 }
 
 #page-top {    
