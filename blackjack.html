@@ -6,7 +6,7 @@
     <meta name="description" content="テキスト">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/blackjack.css">
+    <link rel="stylesheet" href="css/template.css">
     <script src="js/scroll.js"></script>
     <script src="js/carousel.js"></script>
     <!-- 自動西暦表示用関数 -->
@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <!-- Todo リンクの差し替え -->
     <!-- ヘッダー リンク -->
     <header id="header" class="wrapper">
       <h1 class="site-title"><a href="index.html">
@@ -36,12 +37,28 @@
 
     <main>
       <!-- Todo 画面の差し替え -->
-      <!-- Todo カルーセルスライダー導入 -->
-      <!-- メイン アプリ画像 -->
+      <!-- アプリ画像 -->
       <div id="mainvisual">
         <h2 class="app-title"> ブラックジャックアプリ </h2>
-        <img src="img/mainvisual.jpg" alt="メインビジュアル">
+        <div id="slider" class="slider">
+          <div id="slide" class="slide">
+            <div id="slide-content" class="slide-content">
+              <img src="img/console1.png" alt="BlackJack1">
+            </div>
+          </div>
+          <div id="slide" class="slide">
+            <div id="slide-content" class="slide-content">
+              <img src="img/console1.png" alt="BlackJack2">
+            </div>
+          </div>
+          <div id="slide" class="slide">
+            <div id="slide-content" class="slide-content">
+              <img src="img/console3.png" alt="BlackJack2">
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Todo 内容記載 -->
       <!-- アプリ概要説明 -->
       <section id="description" class="wrapper">
         <div class="content">
@@ -65,7 +82,7 @@
         </div>
       </section>
     </main>
-    
+
     <!-- 前のページへ戻るボタン -->
     <div id="container">
       <a href="index.html" id="back-btn">戻る</a>
