@@ -8,7 +8,6 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scroll.js"></script>
-    <script src="js/modal.js"></script>
     <script src="js/carousel.js"></script>
     <!-- 自動西暦表示用関数 -->
     <script type="text/javascript">
@@ -107,55 +106,24 @@
         <ul>
           <li>
             <div class="section-item-img">
-              <img id="image1" src="img/consoletop.png" alt="BlackJack画面" border="1" onclick="openImg1()">
+              <a href="blackjack.html"><img id="image1" src="img/consoletop.png" alt="BlackJack画面" border="1"></a>
               <h3 class="content-title">ブラックジャックアプリ</h3>
             </div>
           </li>
           <li>
             <div class="section-item-img">
-              <img id="image2" src="img/todoapptop.png" alt="ToDoApp画面" border="1" onclick="openImg2()">
+              <a href="todolist.html"><img id="image2" src="img/todoapptop.png" alt="ToDoApp画面" border="1"></a>
               <h3 class="content-title">タスク管理アプリ</h3>
             </div>
           </li>
           <li>
             <div class="section-item-img">
-              <img id="image3" src="img/weathertop.png" alt="StudyApp画面" border="1" onclick="openImg3()">
+              <a href="weather.html"><img id="image3" src="img/weathertop.png" alt="StudyApp画面" border="1"></a>
               <h3 class="content-title">天気予報アプリ</h3>
             </div>
           </li>
         </ul>
       </section>
-      <!-- モーダル表示用 -->
-      <div class="modal js-modal">
-        <div class="modal-container">
-          <div class="modal-close js-modal-close">×</div>
-          <div class="modal-content">
-            <div id="slider" class="slider">
-              <div id="slide" class="slide">
-                <div id="slide-content" class="slide-content"></div>
-              </div>
-              <div id="slide" class="slide">
-                <div id="slide-content" class="slide-content"></div>
-              </div>
-              <div id="slide" class="slide">
-                <div id="slide-content" class="slide-content"></div>
-              </div>
-            </div>
-            <h3>【開発言語/開発環境】</h3>
-            <p id="environment"></p>
-            <h3>【概要】</h3>
-            <p id="summary"></p>
-            <h3>【制作背景】</h3>
-            <p id="background"></p>
-            <h3>【GitHub URL】</h3>
-            <p id="github"></p>
-            <h3>【工夫したポイント】</h3>
-            <p id="point"></p>
-            <h3>【課題】</h3>
-            <p id="assignment"></p>
-          </div>
-        </div>
-      </div>
     </main>
     <!-- TOPに戻るボタン -->
     <a href="#" id="page-top">TOP</a>
