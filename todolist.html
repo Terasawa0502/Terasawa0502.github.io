@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>MyProfile</title>
+    <meta name="description" content="テキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/template.css">
+    <script src="js/scroll.js"></script>
+    <script src="js/carousel.js"></script>
+    <!-- 自動西暦表示用関数 -->
+    <script type="text/javascript">
+      function ShowNowYear() {
+        var now = new Date();
+        var year = now.getFullYear();
+        document.write(year);
+      } 
+    </script>
+  </head>
+
+  <body>
+    <!-- ヘッダー リンク -->
+    <header id="header" class="wrapper">
+      <h1 class="site-title"><a href="index.html">
+        <img src="img/logo.svg" alt="Profile">
+      </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="blackjack.html"> ブラックジャック </a></li>
+          <li><a href="weather.html"> 天気予報 </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- アプリ画像 -->
+      <div id="mainvisual">
+        <h2 class="app-title"> タスク管理アプリ </h2>
+        <div id="slider" class="slider">
+          <div id="slide" class="slide">
+            <div id="slide-content" class="slide-content">
+              <img src="img/todoapp1.png" alt="タスク管理1">
+            </div>
+          </div>
+          <div id="slide" class="slide">
+            <div id="slide-content" class="slide-content">
+              <img src="img/todoapp2.png" alt="タスク管理2">
+            </div>
+          </div>
+          <div id="slide" class="slide">
+            <div id="slide-content" class="slide-content">
+              <img src="img/todoapp3.png" alt="タスク管理3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- アプリ概要説明 -->
+      <section id="description" class="wrapper">
+        <div class="content">
+          <h3>【開発言語/開発環境】</h3>
+          <p>Java/Android Studio</p>
+          <h3>【概要】</h3>
+          <p>Androidで、タスク進捗の管理を行うことができるアプリです。</p>
+          <p>複雑な操作等の必要はなく、誰でも手軽に使用することができます。</p>
+          <h3>【制作した背景】</h3>
+          <p>前回作成したブラックジャックアプリでは実装されていない</p>
+          <p>データベースを使用したアプリを実装してみたいと考えたためです。</p>
+          <h3>【GitHub URL】</h3>
+          <a href="https://github.com/Terasawa0502/andoroid_todolist_app" target="_blank">ソースコードの確認はこちら</a>
+          <h3>【制作してみての感想】</h3>
+          <p>前回同様にJavaを使用しましたが、コンソール上でなく動作するアプリが初めてだったのもあり、</p>
+          <p>レイアウト作成やデータベース連動処理などわからないことがたくさんありました。</p>
+          <p>ですが、社内有識者の助力もあり、なんとか完成することができました。</p>
+          <p>今後の課題としては、タスクの編集や削除機能およびリマインダー機能を実装できるように、</p>
+          <p>更にデータベース処理への理解を深めていきたいと思います。</p>
+      </div>
+      </section>
+    </main>
+
+    <!-- 前のページへ戻るボタン -->
+    <div id="container">
+      <a href="index.html" id="back-btn">戻る</a>
+    </div>
+
+    <!-- TOPに戻るボタン -->
+    <a href="#" id="page-top">TOP</a>
+
+    <!-- フッター 自動西暦表示 -->
+    <footer id="footer">
+      <p>&copy; 
+        <script type="text/javascript">
+          ShowNowYear();
+        </script> 
+          Profile</p>
+    </footer>
+  </body>
+</html>
