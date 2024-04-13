@@ -53,6 +53,15 @@ li {
 .sub-content {
   display: flex;
   justify-content: space-between;
+  width: 120%;
+}
+
+.content-period {
+  width: 50%;
+}
+
+.content-sentence {
+  width: 50%;
 }
 
 .section-item-img {
