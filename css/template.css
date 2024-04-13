@@ -11,7 +11,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #0000ff;
 }
 
 img {
@@ -163,7 +163,6 @@ li {
 
 #description a:hover {
   text-decoration: underline;
-  color: red;
 }
 
 #description p {
