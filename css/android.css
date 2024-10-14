@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 基本タグ設定部分 */
 html {
   font-size: 100%;
 }
@@ -36,23 +37,7 @@ li {
   list-style: none;
 }
 
-.site-title {
-  width: 120px;
-  line-height: 1px;
-  padding: 10px 0;
-}
-
-.site-title a {
-  display: block;
-}
-
-.app-title {
-  margin: 20px 0 40px 0;
-  font-size: 46px;
-  font-weight: bold;
-  text-align: left;
-}
-
+/* ヘッダー */
 #header {
   display: flex;
   justify-content: space-between;
@@ -102,12 +87,22 @@ nav a {
   padding: 10px 0;
 }
 
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
 
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto 100px auto;
-  padding: 0;
-  text-align: center;
+.site-title a {
+  display: block;
+}
+
+/* アプリ画像 */
+.app-title {
+  margin: 20px 0 40px 0;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
 }
 
 #mainvisual {
@@ -125,25 +120,18 @@ nav a {
   object-fit: cover;
 }
 
-/* 
-★編集箇所★
-*/
-
-/* carousel-itemの高さを32remに指定 */
+/* カルーセル */
 .carousel-item {
   height: 119rem;
 }
 
-/*carousel-item直下の子要素imgタグに設定 */
 .carousel-item>img {
 
-  /* 絶対位置を指定 */
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
 
-  /* 高さはcarousel-itemに揃える */
   height: 119rem;
 }
 
@@ -160,7 +148,25 @@ nav a {
   color: #fff;
   text-align: center;
   opacity: .5;
+  border-radius: 8px;
   transition: opacity .15s ease;
+}
+
+.first-label {
+  color: black;
+  padding: 10px;
+}
+
+.second-label {
+  padding: 10px;
+}
+
+/* アプリ概要説明 */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0;
+  text-align: center;
 }
 
 #description .content {
@@ -189,13 +195,7 @@ nav a {
   text-decoration: underline;
 }
 
-#footer {
-  font-size: 0.5rem;
-  padding: 10px 0;
-  text-align: center;
-}
-
-/* 前のページに戻るボタン */
+/* 戻るボタン */
 #container {
   padding: 16px;
 }
@@ -215,61 +215,92 @@ nav a {
 }
 
 #back-btn:hover {
-  color: black; /* ホバー時の色 */
+  color: black;
 }
+
+/* フッター */
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 600px) {
 
-  /* TODO:カルーセル部分のレスポンシブデザイン実装 */
-  
-  .site-title {
-    width: 100px;
-    line-height: 1px;
-    padding: 10px 10px;
-  }
+/* ヘッダー */
+.site-title {
+  width: 100px;
+  line-height: 1px;
+  padding: 10px 10px;
+}
 
-  #mainvisual .app-title {
-    margin: 10px 0 15px 10px;
-    font-size: 20px;
-    text-align: left;
-  }
+nav ul {
+  display: flex;
+  padding: 10px 0px;
+}
 
-  #mainvisual img {
-    height: calc(100vh - 60px);
-  }
+nav li {
+  font-size: 12px;
+  margin: 5px 0;
+}
 
-  #description .content {
-    flex-direction: column;
-    font-size: 10px;
-    padding-top: 15px;
-  }
+nav a {
+  padding: 8px 0;
+}
 
-  #description h3 {
-    margin: 10px 0px 5px 0px;
-    font-size: 15px;
-  }
+/* アプリ画像 */
+#mainvisual .app-title {
+  margin: 10px 0 15px 10px;
+  font-size: 20px;
+  text-align: left;
+}
 
-  #description p {
-    margin: 5px 0px;
-  }
+#mainvisual img {
+  height: calc(100vh - 60px);
+}
 
-  nav ul {
-    display: flex;
-    padding: 10px 0px;
-  }
+/* カルーセル */
+.carousel-item {
+  height: 32rem;
+}
 
-  nav li {
-    font-size: 12px;
-    margin: 5px 0;
-  }
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
 
-  nav a {
-    padding: 8px 0;
-  }
+/* アプリ概要説明 */
+#description .content {
+  flex-direction: column;
+  font-size: 10px;
+  padding-top: 15px;
+}
 
-  #back-btn {
-    width: 60px;
-    padding: 0.5rem 2rem;
-    font-size: 10px;
-  }
+#description h3 {
+  margin: 10px 0px 5px 0px;
+  font-size: 15px;
+}
+
+#description p {
+  margin: 5px;
+}
+
+#description a {
+  margin: 5px;
+}
+
+/* 戻るボタン */
+#container {
+  padding: 4px;
+}
+
+#back-btn {
+  padding: 0.5rem 2rem;
+  font-size: 10px;
+}
+
 }
