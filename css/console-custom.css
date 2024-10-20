@@ -121,6 +121,10 @@ nav a {
 }
 
 /* カルーセル */
+.carousel-h {
+  padding: 0px 0px 10px 0px;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
